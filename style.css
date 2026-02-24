@@ -1,0 +1,248 @@
+/*SUMÁRIO_CORES*/
+:root{
+    --cor-fundo: #F2F2F2;
+    --cor-string:#262519;
+    --cor-destaque: #545942;
+    --cor-destaque-hover: #838C70;
+}
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+body {
+    background-color: var(--cor-fundo);
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.btn-contato button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #F2762E;
+    color: white;
+    border: solid 2px #F2762E;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1s;
+} 
+button:hover {
+    box-shadow: 0px 0px 8px var(--cor-destaque-hover);
+    transform: scale(1.05);
+}
+h2.titulo {
+   color: var(--cor-string); 
+   font-size: 32px;
+   text-align: center;
+}
+h2.titulo span {
+    color: #F2762E;
+}
+
+
+/*ESTILO DO CABEÇALHO*/
+header {
+    padding: 40px 4%;
+}
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: var(--cor-destaque);
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+header a:hover {
+    color: var(--cor-string);
+    transform: scale(1.05);
+}
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+header nav ul a button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#F2762E;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 10px;
+
+}
+
+/*ESTILO APRESENTAÇÃO PRINCIPAL*/
+section.apresentacao-principal {
+    padding: 50px 4%;
+}
+
+section.apresentacao-principal .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.apresentacao-principal h1 {
+    color: var(--cor-string);
+    font-size: 42px;
+    line-height: 40px;
+}
+.apresentacao-principal .txt-apresentacao-principal h1 span {
+    color: #F2762E;
+}
+
+.apresentacao-principal .txt-apresentacao-principal p {
+    color: var(--cor-string);
+    margin: 10px 0;
+    font-size: 18px;
+}
+.apresentacao-principal .img-apresentacao-principal img{
+    position: relative;
+    animation: animacao-flutuar 2s ease-in-out infinite alternate;
+}
+.apresentacao-principal .btn-redes {
+    padding: 20px 0px;
+    }
+@keyframes animacao-flutuar{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 30px
+    }
+}
+
+/*ESTILO DAS ESPECIALIDADES*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box{
+    color: var(--cor-string);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid color(rgba(255, 255, 255, 0.495));
+    margin-top: 45px;
+    transition: .3s;
+}
+.especialidades .especialidades-box:hover{
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+    transform: scale(1.05);
+}
+.especialidades .especialidades-box i{
+    font-size: 65px;
+    color: var(--cor-string);
+}
+.especialidades .especialidades-box h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+section.sobre {
+    padding: 40px 4%;
+}
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre.txt-sobre{
+    color: var(--cor-string);
+
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #F2762E;
+    display: block;
+    font-size: 40px;
+}
+
+.sobre .txt-sobre p {
+    margin:10px 0;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.btn-redes button{
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid #F2762E;
+    background-color:#F2762E;
+    color: white;
+    cursor: pointer;
+    margin: 0px 5px;
+
+}
+
+/*ESTILO DO PORTIFÓLIO
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(61, 72, 61, 0.148) ;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color:#F2762E;
+}
+*/
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(61, 72, 61, 0.148);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #F2762E;
+}
+
+footer .line-footer p i {
+    color: var(--cor-string);
+    font-size: 18px;
+}
+footer .line-footer p a {
+    color: var(--cor-string);
+}
